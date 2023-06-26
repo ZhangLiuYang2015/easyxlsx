@@ -1,8 +1,8 @@
 package test
 
 import (
-	"easyxlsx"
 	"fmt"
+	"github.com/ZhangLiuYang2015/easyxlsx"
 	"testing"
 )
 
