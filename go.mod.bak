@@ -1,4 +1,4 @@
-module github.com/ZhangLiuYang2015/easyxlsx
+module easyxlsx
 
 go 1.19
 
