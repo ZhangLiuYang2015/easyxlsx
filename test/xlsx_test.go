@@ -7,8 +7,8 @@ import (
 )
 
 type Obj struct {
-	Ip     string `xlsx:"column:0"`
-	Number string `xlsx:"column:1"`
+	Ip     string `xlsx:"name:ip"`
+	Number string `xlsx:"name:序号"`
 }
 
 func Test(t *testing.T) {
