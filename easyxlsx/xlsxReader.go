@@ -19,9 +19,11 @@ func analysisSheet(sheet *xlsx.Sheet, template SheetTemplate) (data []interface{
 			rank, _ := c.GetCoordinates()
 			fieldName := template.fieldName(rank)
 			if fieldName != "" {
-				value := c.Value
-				if c.Value == "" && len(c.RichText) != 0 {
-					value = c.RichText[0].Text
+				value := c.String()
+				if value == "" && len(c.RichText) != 0 {
+					for _, text := range c.RichText {
+						value += text.Text
+					}
 				}
 				elem.FieldByName(fieldName).SetString(value)
 			}

@@ -2,7 +2,7 @@ package test
 
 import (
 	"fmt"
-	"github.com/ZhangLiuYang2015/easyxlsx"
+	"github.com/ZhangLiuYang2015/easyxlsx/easyxlsx"
 	"testing"
 )
 
